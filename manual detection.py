@@ -114,6 +114,15 @@ def extract_rgb_from_grid(image, x1, y1, x2, y2):
     return rgb_values, image
 
 
+def save_rgb_values(image_path, output_dir,rgb_values):
+    """ ✅ 保存提取的 RGB 颜色数组到自定义输出路径 """
+    filename = os.path.splitext(os.path.basename(image_path))[0]
+    npy_path = os.path.join(output_dir, f"rgb_{filename}.npy")
+    np.save(npy_path, rgb_values.astype(np.float32))
+
+    print(f"✅ RGB 颜色数据已保存至: {npy_path}")
+    return npy_path
+
 def visualize_results(image_path, image, x1, y1, x2, y2, rgb_values):
     """ ✅ 可视化结果，包括选区标记、色卡分割、RGB 色块 """
     fig, ax = plt.subplots(1, 3, figsize=(15, 5))
@@ -153,37 +162,19 @@ def process_image(image_path):
 
     image = cv2.imread(image_path)  # **OpenCV 读取 BGR**
 
-    # **手动绘制选区**
     selected_region = get_manual_selection(image)
     if selected_region is None:
         print("❌ 未选择区域，跳过此图片！")
         return
 
     x1, y1, x2, y2 = selected_region
-
-    # **提取色卡区域的颜色信息**
     rgb_values, annotated_image = extract_rgb_from_grid(image, x1, y1, x2, y2)
 
-    # **可视化结果**
+    npy_path = save_rgb_values(image_path,output_path, rgb_values)  # ✅ 保存 RGB 颜色数组
     visualize_results(image_path, annotated_image, x1, y1, x2, y2, rgb_values)
 
 
-def batch_process_images(input_path):
-    """ ✅ 处理单个文件或文件夹 """
-    if os.path.isfile(input_path):  # **如果是单张图片**
-        process_image(input_path)
-    elif os.path.isdir(input_path):  # **如果是文件夹**
-        images = [f for f in os.listdir(input_path) if f.lower().endswith(('jpg', 'png', 'jpeg', 'cr2'))]
-
-        if not images:
-            print("❌ 未找到图片！")
-            return
-
-        for img_name in images:
-            img_path = os.path.join(input_path, img_name)
-            process_image(img_path)
-
-
-# **运行批量处理**
-input_path = "D:\Desktop\pictures-1.20\G1\deep pink\IMG_1084.CR2" # 可以是文件夹或单个文件
-batch_process_images(input_path)
+# **运行处理**
+input_path = "D:\Desktop\pictures-1.20\G1\orange\IMG_1043.CR2"  # 可以是单张图片
+output_path="D:\Desktop\pictures-1.20"
+process_image(input_path)
