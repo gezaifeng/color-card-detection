@@ -1,19 +1,38 @@
 import numpy as np
 import cv2
+import rawpy  # 处理 CR2
 from PIL import Image
 import matplotlib
-
 matplotlib.use('TkAgg')  # 让 plt.show() 正常显示
 import matplotlib.pyplot as plt
 import os
 
 # ✅ 颜色矩阵网格大小
 GRID_ROWS, GRID_COLS = 4, 6
+DISPLAY_MAX_SIZE = 1000  # ✅ 限制显示窗口最大宽/高
 
 # ✅ 变量存储鼠标绘制矩形区域
 rect_start = None
 rect_end = None
 drawing = False
+
+
+def convert_cr2_to_jpg(cr2_path):
+    """ ✅ 将 CR2 转换为 JPG 并返回 JPG 路径 """
+    jpg_path = cr2_path.replace(".cr2", ".jpg").replace(".CR2", ".jpg")
+    with rawpy.imread(cr2_path) as raw:
+        rgb_image = raw.postprocess(output_bps=8)
+        img = Image.fromarray(rgb_image)
+        img.save(jpg_path, "JPEG", quality=100)
+    return jpg_path
+
+
+def resize_for_display(image):
+    """ ✅ 自适应缩放图片，保证不会超出窗口 """
+    h, w = image.shape[:2]
+    scale = min(DISPLAY_MAX_SIZE / max(h, w), 1.0)  # 计算缩放比例
+    new_w, new_h = int(w * scale), int(h * scale)
+    return cv2.resize(image, (new_w, new_h)), scale
 
 
 def select_roi(event, x, y, flags, param):
@@ -36,7 +55,7 @@ def get_manual_selection(image):
     """ ✅ 让用户在图片上绘制矩形选取色卡区域 """
     global rect_start, rect_end
 
-    temp_image = image.copy()
+    temp_image, scale = resize_for_display(image)  # ✅ 先缩放图片
     cv2.namedWindow("Select Region")
     cv2.setMouseCallback("Select Region", select_roi)
 
@@ -55,8 +74,9 @@ def get_manual_selection(image):
     cv2.destroyAllWindows()
 
     if rect_start and rect_end:
-        x1, y1 = min(rect_start[0], rect_end[0]), min(rect_start[1], rect_end[1])
-        x2, y2 = max(rect_start[0], rect_end[0]), max(rect_start[1], rect_end[1])
+        # ✅ 把选区放大到原始尺寸
+        x1, y1 = int(rect_start[0] / scale), int(rect_start[1] / scale)
+        x2, y2 = int(rect_end[0] / scale), int(rect_end[1] / scale)
         return x1, y1, x2, y2
     else:
         return None
@@ -127,6 +147,10 @@ def visualize_results(image_path, image, x1, y1, x2, y2, rgb_values):
 
 def process_image(image_path):
     """ ✅ 处理单张图片：手动选择区域、色卡分割、颜色提取 """
+    if image_path.lower().endswith('.cr2'):
+        print(f"🔄 转换 CR2: {image_path}")
+        image_path = convert_cr2_to_jpg(image_path)  # **转换 CR2**
+
     image = cv2.imread(image_path)  # **OpenCV 读取 BGR**
 
     # **手动绘制选区**
@@ -144,24 +168,22 @@ def process_image(image_path):
     visualize_results(image_path, annotated_image, x1, y1, x2, y2, rgb_values)
 
 
-def batch_process_images(input_dir):
-    """ ✅ 处理文件夹内的所有图片 """
-    images = [f for f in os.listdir(input_dir) if f.lower().endswith(('jpg', 'png', 'jpeg'))]
+def batch_process_images(input_path):
+    """ ✅ 处理单个文件或文件夹 """
+    if os.path.isfile(input_path):  # **如果是单张图片**
+        process_image(input_path)
+    elif os.path.isdir(input_path):  # **如果是文件夹**
+        images = [f for f in os.listdir(input_path) if f.lower().endswith(('jpg', 'png', 'jpeg', 'cr2'))]
 
-    if not images:
-        print("❌ 未找到图片！")
-        return
+        if not images:
+            print("❌ 未找到图片！")
+            return
 
-    print(f"🔍 发现 {len(images)} 张图片，开始处理...")
-
-    for img_name in images:
-        img_path = os.path.join(input_dir, img_name)
-        print(f"📷 处理图片: {img_name} ...")
-        process_image(img_path)
-
-    print("✅ 所有图片处理完成！")
+        for img_name in images:
+            img_path = os.path.join(input_path, img_name)
+            process_image(img_path)
 
 
 # **运行批量处理**
-input_dir = "D:\\Desktop\\pngs2"
-batch_process_images(input_dir)
+input_path = "D:\Desktop\pictures-1.20\G1\deep pink\IMG_1084.CR2" # 可以是文件夹或单个文件
+batch_process_images(input_path)
