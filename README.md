@@ -5,6 +5,7 @@
 > 本仓库产出的是 **色卡色块的 RGB 数据与可视化**，用于后续任何需要色卡编码向量的任务（例如光谱重建等）。
 
 ---
+<img width="2816" height="1536" alt="1766388579925-019b44f6-1628-76d5-a492-e49007a69950" src="https://github.com/user-attachments/assets/3aaba90f-973e-4352-a499-defb0008f2a9" />
 
 ## 1. 功能概述
 
