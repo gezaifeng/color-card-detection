@@ -137,7 +137,3 @@ python ui_main.py
 - 输出文件名规则与输出目录结构以实际代码为准（见 `io_utils.py` 与 `pipeline.py`）。
 
 ---
-
-## License
-
-请根据你的实际需求在仓库中添加许可证（例如 MIT / Apache-2.0 / GPL 等）。
