@@ -2,6 +2,8 @@
 
 本项目用于对“溶液 + 多色块色卡编码”拍摄图像进行**批量色卡识别、色块采样与特征导出**。程序会在每张图片中自动定位上下两块色卡区域（`ref` / `sample`），按网格切分色块并提取 RGB 数据，然后构建 `ratio / log-ratio` 等特征，最终输出多组 `.npy` 文件与可视化结果，便于后续的光谱重建/回归建模与数据质检。
 
+<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/4bbf2927-b4f7-4ab7-b7ad-4dad2c0cba3c" />
+
 ---
 
 ## 功能概览
