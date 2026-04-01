@@ -9,12 +9,12 @@ def find_images(directory):
                 image_paths.append(os.path.join(root, f))
     return image_paths
 
-def out_path(input_dir, output_dir, image_path, prefix="rgb_", suffix="", ext="npy"):
-    """保持与输入目录相对层级一致地生成输出路径"""
-    rel = os.path.relpath(image_path, input_dir)
-    rel_dir = os.path.dirname(rel)
-    folder = os.path.join(output_dir, rel_dir)
-    os.makedirs(folder, exist_ok=True)
-    name = os.path.splitext(os.path.basename(image_path))[0]
-    if suffix: suffix = "_" + suffix
-    return os.path.join(folder, f"{prefix}{name}{suffix}.{ext}")
+
+def out_path(input_dir, output_dir, image_path, prefix="", suffix="", ext="npy"):
+    rel = os.path.relpath(image_path, start=input_dir)
+    base = os.path.splitext(os.path.basename(rel))[0]
+    if suffix:
+        name = f"{prefix}{base}_{suffix}.{ext}"
+    else:
+        name = f"{prefix}{base}.{ext}"
+    return os.path.join(output_dir, name)
