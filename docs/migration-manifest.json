@@ -1,0 +1,530 @@
+{
+  "integrated_at": "2026-10-21T10:12:59+08:00",
+  "target_repository": "https://github.com/gezaifeng/color-card-detection",
+  "strategy": "Keep original base history; replay all later source trees in chronological author-date order. Preserve original commits under archive/* branches. Replayed commits retain original authors/dates and record migration-time committers.",
+  "sources": [
+    {
+      "name": "color-card-detection",
+      "repository": "https://github.com/gezaifeng/color-card-detection",
+      "created_at": "2025-02-24T07:15:36Z",
+      "original_tip": "4050dac805b9576ef79fa7b45fd02afcc55dbcc8",
+      "archive_ref": "refs/heads/archive/color-card-detection/main",
+      "original_commit_count": 21
+    },
+    {
+      "name": "card_detection_9.18",
+      "repository": "https://github.com/gezaifeng/card_detection_9.18",
+      "created_at": "2026-01-19T00:56:35Z",
+      "original_tip": "c4ef5a6a66d9b11eea21be38c92c8ed4b818a75e",
+      "archive_ref": "refs/heads/archive/card_detection_9.18/main",
+      "original_commit_count": 3
+    },
+    {
+      "name": "card_detection_1.29",
+      "repository": "https://github.com/gezaifeng/card_detection_1.29",
+      "created_at": "2026-01-30T08:28:24Z",
+      "original_tip": "2d28ba5bb9c3085a0b13c58724eaff2646fbd0f3",
+      "archive_ref": "refs/heads/archive/card_detection_1.29/main",
+      "original_commit_count": 4
+    },
+    {
+      "name": "card_detection_2.1",
+      "repository": "https://github.com/gezaifeng/card_detection_2.1",
+      "created_at": "2026-02-01T06:54:00Z",
+      "original_tip": "d7cad1a598998e0be7c5d7bf87a61822990ea370",
+      "archive_ref": "refs/heads/archive/card_detection_2.1/main",
+      "original_commit_count": 15
+    }
+  ],
+  "commits": [
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "cc822af7298d402dbdf3982f79d60fe2b2feb03a",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:15:36+08:00",
+      "tree": "470cc1a63533db0aad8dcbf0b5227c7c3f370355",
+      "integrated_commit": "cc822af7298d402dbdf3982f79d60fe2b2feb03a",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "dbbfddab2522aa910e1ad6a8781c16ef56700519",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:16:35+08:00",
+      "tree": "afcfa8790b9e7fd91dff16fbfee06cab8462cd50",
+      "integrated_commit": "dbbfddab2522aa910e1ad6a8781c16ef56700519",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "7039d460511815dc6898a8546ccc8618c86282d0",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:17:52+08:00",
+      "tree": "bb67f94a14b0951e8f504f19f1e51e30b49517cc",
+      "integrated_commit": "7039d460511815dc6898a8546ccc8618c86282d0",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "1a359b2ae8cd8573eb742fd1a40d7a72c1e4716c",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:19:00+08:00",
+      "tree": "ef5a587474fd78d821b2cff0c42e805d949a38fb",
+      "integrated_commit": "1a359b2ae8cd8573eb742fd1a40d7a72c1e4716c",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "cd3ea10a7336827b52ff9a74d4889d14c78c72de",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:21:35+08:00",
+      "tree": "986f5160800cbee8f42c1a2509d1b15c2a86b430",
+      "integrated_commit": "cd3ea10a7336827b52ff9a74d4889d14c78c72de",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "10203365088ee9136f6151a881f5793458fa852d",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:24:52+08:00",
+      "tree": "57bfdd25c6245f16692cda3a0d4c3c14536357b4",
+      "integrated_commit": "10203365088ee9136f6151a881f5793458fa852d",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "65f6111c666fc73717a656b60499aee58e2c60e8",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:25:17+08:00",
+      "tree": "bd42ea85fa8243ca1a102b098b38e3fc955adb75",
+      "integrated_commit": "65f6111c666fc73717a656b60499aee58e2c60e8",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "2994181adb16063e3bd1153167b3e3e087faecb3",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-24T15:27:36+08:00",
+      "tree": "abc0d936bc425210ce44ea281ff3b3a54214adee",
+      "integrated_commit": "2994181adb16063e3bd1153167b3e3e087faecb3",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "e6c061717ef080d5f7e44bf57e7a76194a1b2a5f",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-26T19:01:35+08:00",
+      "tree": "951a7729fbc0d6d156b8778db7b57bdd0d36bb9d",
+      "integrated_commit": "e6c061717ef080d5f7e44bf57e7a76194a1b2a5f",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "b4e60d9eee640c2a96a1e4b150a3e2fdceafa700",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-26T19:01:54+08:00",
+      "tree": "2058271f0697a689d316d6dfdaae57c8d0839dee",
+      "integrated_commit": "b4e60d9eee640c2a96a1e4b150a3e2fdceafa700",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "73d8945ece19678a6f9e07725412da7a968c320a",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-26T19:02:45+08:00",
+      "tree": "32d47a94d7b0618795d4d3ab3131ab465bdefccc",
+      "integrated_commit": "73d8945ece19678a6f9e07725412da7a968c320a",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "288dce0ba02c688cac27fc86bd29e81420132123",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-26T19:11:02+08:00",
+      "tree": "d0ec11306ca97bc9c9632a6c8c795bf4aa826f44",
+      "integrated_commit": "288dce0ba02c688cac27fc86bd29e81420132123",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "d1c099a8ea46969644c7d8d8f76d51bbbd5321cf",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-27T15:03:50+08:00",
+      "tree": "416c3c6cd334b885a72f796ba82ce959d73dea0a",
+      "integrated_commit": "d1c099a8ea46969644c7d8d8f76d51bbbd5321cf",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "26e95ab72c1ce20d8cfd6ec6f2fbef51b74a2b72",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-27T15:04:17+08:00",
+      "tree": "0b32f2f97e5b5a54891fd3c883f5367ac696ed9f",
+      "integrated_commit": "26e95ab72c1ce20d8cfd6ec6f2fbef51b74a2b72",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "ba66a8ea695bf85dec7fa5a7c0082b033c9d4fcf",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-27T15:19:49+08:00",
+      "tree": "c4ea13d925aaa797ba146347bb0011f3565873df",
+      "integrated_commit": "ba66a8ea695bf85dec7fa5a7c0082b033c9d4fcf",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "2fa16f7e900fee7bd6385414127b77afdc655e91",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-27T15:35:02+08:00",
+      "tree": "0eee03ff9c6c8d63f24e17d8224c1c8c7a0b8b91",
+      "integrated_commit": "2fa16f7e900fee7bd6385414127b77afdc655e91",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "90a805666a59c228072c3560573d1d534ca05376",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-27T18:54:04+08:00",
+      "tree": "c967b7f948e206e11aaa0a5617b35aec185b761f",
+      "integrated_commit": "90a805666a59c228072c3560573d1d534ca05376",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "35602dc32b1bd3bd0320c0280c3899ac428d8032",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-02-27T18:54:47+08:00",
+      "tree": "c9f1d9cbdca96627117046db7e155f64a0878c94",
+      "integrated_commit": "35602dc32b1bd3bd0320c0280c3899ac428d8032",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "bf244d709dc811e4ce3e38cca44652923e35c74d",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-05-06T22:32:31+08:00",
+      "tree": "60d1313523ac02c621eaa7f5f67831ff47368e3b",
+      "integrated_commit": "bf244d709dc811e4ce3e38cca44652923e35c74d",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "c812bb62d0ea7dc95142fdc504650ebf53148713",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-12-22T15:32:28+08:00",
+      "tree": "3a7ee2dc1225f202c43be2cecd43599f54b65140",
+      "integrated_commit": "c812bb62d0ea7dc95142fdc504650ebf53148713",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "color-card-detection",
+      "source_commit": "4050dac805b9576ef79fa7b45fd02afcc55dbcc8",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2025-12-22T15:35:53+08:00",
+      "tree": "695e9a7e98142a7fa5faf2c2af999e855f96e516",
+      "integrated_commit": "4050dac805b9576ef79fa7b45fd02afcc55dbcc8",
+      "method": "unchanged original commit"
+    },
+    {
+      "source_repository": "card_detection_9.18",
+      "source_commit": "90a2870ed3859a032b7bf50fbe29509dcee077a2",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-19T08:57:23+08:00",
+      "tree": "6a1b764e586c97188f59cf8f380322ecc5ac3def",
+      "integrated_commit": "304003bc6f94ae06d6cb7006a76a089556653329",
+      "original_subject": "Initial commit",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_9.18",
+      "source_commit": "88b1b4183f44c9bdc35bd825ed1f55e7e6c8c01a",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-19T09:00:52+08:00",
+      "tree": "1d9a3cc9d131e65ff91367cc75da1f9e076c5592",
+      "integrated_commit": "ccd381ffa72509f6f6393ee402631bd3a199b60f",
+      "original_subject": "Add files via upload",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_9.18",
+      "source_commit": "c4ef5a6a66d9b11eea21be38c92c8ed4b818a75e",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-19T09:11:17+08:00",
+      "tree": "3728511e5aa4a20cc86930444dd1dbb74eece84c",
+      "integrated_commit": "ca0567ed84b6e9b53b81815a4850b0ac31c7cab9",
+      "original_subject": "Update README.md",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_1.29",
+      "source_commit": "ebed7b538216c89d02d6dfc65fb4a87b93305dab",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-30T16:28:32+08:00",
+      "tree": "545bb586077420c5bc5199bdc200263947fecac8",
+      "integrated_commit": "f85a9153af72405370aab2f0f5565a4481d6b4ad",
+      "original_subject": "Initial commit",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_1.29",
+      "source_commit": "1938aee619c0fcb35a51cef05e3a0b6e4bde7564",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-30T16:29:46+08:00",
+      "tree": "ef7636ee6e732dfe73f5d4bb3f216c199da633f3",
+      "integrated_commit": "19acfcabfac068b12c137b328708ee4f6459c9e4",
+      "original_subject": "Add files via upload",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_1.29",
+      "source_commit": "e75fda668ccb3a2cd57b2988525ba9022cc4fbcf",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-31T13:17:10+08:00",
+      "tree": "ef7636ee6e732dfe73f5d4bb3f216c199da633f3",
+      "integrated_commit": "b5bfed336e5c5cfed54222158156533708ee5bac",
+      "original_subject": "Add files via upload",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_1.29",
+      "source_commit": "2d28ba5bb9c3085a0b13c58724eaff2646fbd0f3",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-01-31T13:18:09+08:00",
+      "tree": "ef7636ee6e732dfe73f5d4bb3f216c199da633f3",
+      "integrated_commit": "ba91939f1ff41abe59b959e190aafd5733bcc995",
+      "original_subject": "Add files via upload",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "078f79377db4d3dbb70e9fdf223623ba1708c5a1",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-02-01T14:54:07+08:00",
+      "tree": "62e266a3bb1b7e11483eaa78a327771b4c32c21c",
+      "integrated_commit": "6203168839b54afa386c5208134d7a41f4ddf279",
+      "original_subject": "Initial commit",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "0175f0df6409f1e0e855c549ef7f8961ee4607c0",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-02-01T14:55:50+08:00",
+      "tree": "5fc39e2fe60979a203445bf9214a54d206eea01f",
+      "integrated_commit": "f886abf55f2ac71b9ee18eb2debf1d75bf698367",
+      "original_subject": "Add files via upload",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "1e2ed31848b5d04fe0b804d8e8c8ddd073cd5441",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-02-02T00:27:11+08:00",
+      "tree": "ad1e5861b65917db72f64dec8c3d32f63a33083d",
+      "integrated_commit": "60b08697ab9133cb92c0a807ba60d4f9c9a30ec7",
+      "original_subject": "Update README.md",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "48e711a52eba93b70b2ae5ef805c1eb8d1b33418",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-02-02T00:27:38+08:00",
+      "tree": "9e7b74b4c859de75e3216f4ad43900c56bbf8743",
+      "integrated_commit": "a00b7f8f9af6ac47cd4aa63b36fa7f962fbc8f91",
+      "original_subject": "Update README.md",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "971297770eab2c1d6a7db6f9c73127dafbf1a563",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-02-02T00:33:26+08:00",
+      "tree": "11408fdf3b1568abf99b8054c507edad2b863287",
+      "integrated_commit": "64e628b4a26f6ffc9de9b5c5b66941eb974ca997",
+      "original_subject": "Update README.md",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "697618783965bd80fb2d220d7c23f832ad667e6b",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:18:27+08:00",
+      "tree": "4ef59963e3f504b55d20fe1d649b03b67ebc1884",
+      "integrated_commit": "0f8bfd5bcf0b236b025f7ce48c3d850f2c511e5d",
+      "original_subject": "Update config.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "6aaadd08806c5ae19faf50cfe5e21c266eb4441d",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:18:46+08:00",
+      "tree": "ec0f37df5a0b70c774450a56a0a2a0a99a408995",
+      "integrated_commit": "78ac6e636b4fe178468e4bad54b4e61854988aac",
+      "original_subject": "Update detect.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "0bd264a3fe26428a150eefcc2078cf3a85124d48",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:19:05+08:00",
+      "tree": "47579bbcb46758904816f17b159df4a628bb111b",
+      "integrated_commit": "ccc0d23e6ba3a266cf78dc9d291b5d2d4a9d3cc5",
+      "original_subject": "Update extract.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "d520e7363b7868c05e6514163a04eb9300242b6a",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:19:22+08:00",
+      "tree": "47579bbcb46758904816f17b159df4a628bb111b",
+      "integrated_commit": "4301941cb4bd6f07215b985d259eff266d466dd9",
+      "original_subject": "Update features.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "78d8f11f188185e559c603683fdb1dc3a1f18370",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:19:42+08:00",
+      "tree": "47579bbcb46758904816f17b159df4a628bb111b",
+      "integrated_commit": "f12f5ba7538ccec95da97b3e631548873be47fa1",
+      "original_subject": "Update geometry.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "5e2f1b8a1309949e7ee4c2f110dcfc5405258c9a",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:19:59+08:00",
+      "tree": "5531cc8f34bbe37fc2d0c86d37b5b475ae8a3166",
+      "integrated_commit": "5f6d6a7a52ed0f5f19a7275ecfa9fabe088d51cb",
+      "original_subject": "Update io_utils.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "980680fe7670a1b8da06073ad0e267df12dae0b7",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:20:15+08:00",
+      "tree": "d52896dd5dce3c84a1abc5c8ea9a223bf2a43a6c",
+      "integrated_commit": "94c8f848d90a2a60e0c3fbb0af3e4c22d25317d0",
+      "original_subject": "Update manual_select.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "33fdf909c35f57e735618ab93e3521c6da3ce7a6",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:20:27+08:00",
+      "tree": "55dbe8cf0f7c83270558c65d65bf184c6a848745",
+      "integrated_commit": "c0bd6bdf4729c69cdfa52ab0959346a8c1933bf5",
+      "original_subject": "Update pipeline.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "b390aab58a21ebd3e66a2b4b5de7aea08010cdbe",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:20:45+08:00",
+      "tree": "f202e040b1b6bb78ff17c68245208420aa5faf29",
+      "integrated_commit": "ab7ee14ad2dec75adec1d8af9566b5936483ff6e",
+      "original_subject": "Update ui_main.py",
+      "method": "exact source tree with reconstructed parent"
+    },
+    {
+      "source_repository": "card_detection_2.1",
+      "source_commit": "d7cad1a598998e0be7c5d7bf87a61822990ea370",
+      "author_name": "gezaifeng",
+      "author_email": "2980765992@qq.com",
+      "author_date": "2026-04-01T15:20:59+08:00",
+      "tree": "2eadc51ec6f4afae6ba6da1ec9c8dcacdc001ad4",
+      "integrated_commit": "c49b9be96846dcfa427377924c94ec738cf299c1",
+      "original_subject": "Update visualize.py",
+      "method": "exact source tree with reconstructed parent"
+    }
+  ],
+  "milestones": [
+    {
+      "tag": "stage-01-original-24patch",
+      "source_repository": "color-card-detection",
+      "source_commit": "4050dac805b9576ef79fa7b45fd02afcc55dbcc8",
+      "integrated_commit": "4050dac805b9576ef79fa7b45fd02afcc55dbcc8",
+      "source_dates": "2025-02-24 to 2025-12-22"
+    },
+    {
+      "tag": "stage-02-9.18",
+      "source_repository": "card_detection_9.18",
+      "source_commit": "c4ef5a6a66d9b11eea21be38c92c8ed4b818a75e",
+      "integrated_commit": "ca0567ed84b6e9b53b81815a4850b0ac31c7cab9",
+      "source_dates": "2026-01-19"
+    },
+    {
+      "tag": "stage-03-1.29",
+      "source_repository": "card_detection_1.29",
+      "source_commit": "2d28ba5bb9c3085a0b13c58724eaff2646fbd0f3",
+      "integrated_commit": "ba91939f1ff41abe59b959e190aafd5733bcc995",
+      "source_dates": "2026-01-30 to 2026-01-31"
+    },
+    {
+      "tag": "stage-04-2.1",
+      "source_repository": "card_detection_2.1",
+      "source_commit": "971297770eab2c1d6a7db6f9c73127dafbf1a563",
+      "integrated_commit": "64e628b4a26f6ffc9de9b5c5b66941eb974ca997",
+      "source_dates": "2026-02-01 to 2026-02-02"
+    },
+    {
+      "tag": "stage-05-2026-04-01",
+      "source_repository": "card_detection_2.1",
+      "source_commit": "d7cad1a598998e0be7c5d7bf87a61822990ea370",
+      "integrated_commit": "c49b9be96846dcfa427377924c94ec738cf299c1",
+      "source_dates": "2026-04-01"
+    }
+  ]
+}
